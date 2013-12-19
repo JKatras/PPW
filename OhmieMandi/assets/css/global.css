@@ -6,7 +6,6 @@ html, body, div, span, applet, object, iframe,
 	border: 0;
 	outline: 0;
 	font-size: 100%;
-	vertical-align: baseline;
 }
 @font-face {
 	font-family: "Sinhala Sangam MN";
@@ -15,6 +14,7 @@ html, body, div, span, applet, object, iframe,
 h1 {
 	font-family: "Sinhala Sangam MN", sans-serif;
 	font-size: 20px;
+	margin: 0;
 }
 p {
 	font-family: "Source Sans Pro", sans-serif;
@@ -25,20 +25,23 @@ header {
 #logo {
 
 }
-/*nav ul {
-	display: block;
-}*/
+nav {
+	margin-bottom: 20px;
+}
 nav ul li{
 	display: inline-block;
 }
 #nav-right {
+	padding-top: 22px;
 	float: right;
 }
 #nav-right li {
 	padding-left: 50px;
 }
 body {
+	width: 1000px;
 	background-color: #eeeeee;
+	margin: 0 auto;
 }
 
 body a, header a, #wrapper h3 {
@@ -57,26 +60,38 @@ body h2, h3, h4, p {
 }
 
 #wrapper {
-	margin: 0px auto;
+	
 	list-style: none;
 	padding: 20px 30px;
-	width: 1000px;
+	
 }
 
 #wrapper ul {
 	list-style: none;
 }
-footer {
-	
-	border-top: 1px solid #8e8e8e;
-
+#home-gallery ul li {
+	display: inline-block;
 }
-footer a {
+#home-gallery h1 {
+	color: #5f45aa;
+}
+.active h1 {
+	color: #5f45aa;
+}
+footer {
+	margin-top: 100px;
+	border-top: 1px solid #8e8e8e;
+	padding-top: 20px;
+}
+#social-media {
+	padding-bottom: 15px;
+}
+#social-media a {
 	padding: 0 15px;
-	
 }
 
 footer p {
+	color: #8e8e8e;
 }
 footer ul li{
 	display: inline-block;
