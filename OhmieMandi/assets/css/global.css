@@ -29,13 +29,14 @@ nav {
 nav ul li{
 	display: inline-block;
 }
-#nav-right {
+.nav-right {
 	padding-top: 22px;
 	float: right;
-}
-#nav-right li {
 	padding-left: 50px;
 }
+/*.nav-right li a {
+	padding-left: 50px;
+}*/
 body {
 	/*width: 1000px;*/
 	background-color: #eeeeee;
@@ -52,7 +53,7 @@ body {
 .column, .columns {
 	padding-left: 0px;
 }
-#home-gallery ul li, #videos #featured ul li {
+#home-gallery ul li, #videos #vid-featured ul li {
 	display: inline-block;
 }
 #home-gallery {
