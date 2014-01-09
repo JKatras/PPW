@@ -24,7 +24,7 @@ header {
 
 }
 nav {
-	margin-bottom: 20px;
+	margin-bottom: 30px;
 }
 nav ul li{
 	display: inline-block;
@@ -60,12 +60,18 @@ body h2, h3, h4, p {
 #wrapper {
 	
 	list-style: none;
-	padding: 20px 30px;
+	margin: 20px 30px;
 	
 }
 
 #wrapper ul {
 	list-style: none;
+}
+.column, .columns {
+	padding: 0px;
+}
+.row {
+	margin: 0px;
 }
 #home-gallery ul li {
 	display: inline-block;
