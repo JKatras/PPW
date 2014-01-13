@@ -1,6 +1,5 @@
 /* most of an Eric Myers reset*/
-html, body, div, span, applet, object, iframe,
-/*h1, h2, h3, h4, h5, h6,*/ p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp,small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+html, body, div, span, applet, object, iframe, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp,small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
 	margin: 0;
 	padding: 0;
 	border: 0;
@@ -18,25 +17,28 @@ p, label {
 	font-weight: 400;
 }
 header {
-
+	height: 70px;
+	margin-bottom: 30px;
+}
+header h1 {
+	float: left;
 }
 #logo {
 
 }
+.main-content {
+	clear: both;
+	margin-top: 30px;
+}
 nav {
-	margin-bottom: 30px;
+	/*margin-bottom: 30px;*/
+	padding-top: 18px;
+	float: right;
 }
 nav ul li{
 	display: inline-block;
-}
-.nav-right {
-	padding-top: 22px;
-	float: right;
 	padding-left: 50px;
 }
-/*.nav-right li a {
-	padding-left: 50px;
-}*/
 body {
 	/*width: 1000px;*/
 	background-color: #eeeeee;
@@ -44,7 +46,8 @@ body {
 }
 #wrapper {
 	list-style: none;
-	margin: 20px 30px;
+	margin: 20px auto;
+	width: 80%;
 }
 
 #wrapper ul {
