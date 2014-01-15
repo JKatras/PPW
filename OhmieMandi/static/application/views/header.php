@@ -1,16 +1,4 @@
 <?php ob_start();?>
-<!--<!DOCTYPE html>
-<html>
-<head>
-<title></title>
-<link rel="stylesheet" href="<?php echo base_url(); ?>public/css/main.css" type="text/css" />
-</head>
-<body>
-<header>
-	<h1><a href="home">A Site of Ice and Fire</a></h1>	
-</header>
-<div id="wrapper">-->
-
 <!DOCTYPE html> <!--[if IE 9]<html class="lt-ie10" lang="en" ><![endif]--> 
 <html class="no-js" lang="en" > 
 <head> 
@@ -34,21 +22,26 @@
 		</h1>
 		<nav>
 			<ul>
-				<li class="active">
+			<?php
+			echo
+				"<li class='active'>
 					<h1>
-						<a href="index.html">Games</a>
+						<a href=?action=home>Games</a>
 					</h1>
 				</li>
+				
 				<li>
 					<h1>
-						<a href="videos.html">Videos</a>
+						<a href=?action=videos>Videos</a>
 					</h1>
 				</li>
+				
 				<li>
 					<h1>
-						<a href="contact.html">Contact</a>
+						<a href=?action=contact>Contact</a>
 					</h1>
-				</li>
+				</li>"
+				?>
 			</ul>
 		</nav>
 	</header>
