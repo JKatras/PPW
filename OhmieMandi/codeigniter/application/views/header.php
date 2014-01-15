@@ -34,9 +34,21 @@
 		</h1>
 		<nav>
 			<ul>
-				<li class="active"><a href="index.html"><h1>Games</h1></a></li>
-				<li><a href="videos.html"><h1>Videos</h1></a></li>
-				<li><a href="contact.html"><h1>Contact</h1></a></li>
+				<li class="active">
+					<h1>
+						<a href="index.html">Games</a>
+					</h1>
+				</li>
+				<li>
+					<h1>
+						<a href="videos.html">Videos</a>
+					</h1>
+				</li>
+				<li>
+					<h1>
+						<a href="contact.html">Contact</a>
+					</h1>
+				</li>
 			</ul>
 		</nav>
 	</header>

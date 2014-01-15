@@ -76,10 +76,10 @@ body {
 a h1, a, a:hover {
 	color: #5f45aa;
 }
-nav a h1 {
+nav h1 a{
 	color: #292929;
 }
-.active h1 {
+.active h1 a{
 	color: #5f45aa;
 }
 article {
