@@ -42,21 +42,30 @@ nav ul li{
 	padding-left: 50px;
 }
 body {
-	/*width: 1000px;*/
 	background-color: #eeeeee;
 	margin: 0 auto;
 }
 #wrapper {
 	list-style: none;
 	margin: 20px auto;
-	width: 80%;
+	width: 90%;
+	max-width: 62.5rem;
 }
 
 #wrapper ul {
 	list-style: none;
 }
-.column, .columns {
+/*.column, .columns {
 	padding-left: 0px;
+}*/
+/*#home-gallery div:first-child {
+	padding-left: 0px;
+}
+#home-gallery div:last-child {
+	padding-right: 0px;
+}*/
+#home-gallery img {
+	width: 100%;
 }
 #home-gallery ul li, #videos #vid-featured ul li {
 	display: inline-block;
