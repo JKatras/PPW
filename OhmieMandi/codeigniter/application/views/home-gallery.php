@@ -3,7 +3,7 @@
 			<div class="large-4 columns">
 				<figure>		
 					<a href="detail.html">
-						<img src="public/images/sh-thumb-293x293.png" alt="a P-38 laying down fire" />
+						<img src="<?php echo base_url(); ?>public/images/sh-thumb-293x293.png" alt="a P-38 laying down fire" />
 					</a>
 				</figure>
 				<h1>
@@ -14,7 +14,7 @@
 			<div class="large-4 columns">
 				<figure>
 					<a href="">
-						<img src="public/images/fake-thumb-293x293.png" alt="Fake Block - the geometric puzzler" />
+						<img src="<?php echo base_url(); ?>public/images/fake-thumb-293x293.png" alt="Fake Block - the geometric puzzler" />
 					</a>
 				</figure>
 				<h1>
@@ -25,7 +25,7 @@
 			<div class="large-4 columns">
 				<figure>
 					<a href="">
-						<img src="public/images/pp-thumb-293x293.png" alt="an 8-bit-looking skull" />
+						<img src="<?php echo base_url(); ?>public/images/pp-thumb-293x293.png" alt="an 8-bit-looking skull" />
 					</a>
 				</figure>
 				<h1>
