@@ -1,4 +1,4 @@
-<!DOCTYPE html> <!--[if IE 9]<html class="lt-ie10" lang="en" ><![endif]--> 
+<!--<!DOCTYPE html> <!--[if IE 9]<html class="lt-ie10" lang="en" ><![endif]--*> 
 <html class="no-js" lang="en" > 
 <head> 
 	<meta charset="utf-8"> 
@@ -26,20 +26,38 @@
 				<li><a href="contact.html"><h1>Contact</h1></a></li>
 			</ul>
 		</nav>
-	</header>	
-	<div id="videos">
+	</header>	-->
+	<div class="main-content" id="videos">
 		<div class="row">
 			<div class="large-3 columns vid-featured">
-				<a href=""><img src="assets/images/YTthumb_210x157.png" alt="YouTube thumbnail - Pirate Install Fix" /></a>
-				<a href=""><h1>Pirate Install Fix</h1></a>
+				<figure>
+					<a href="">
+						<img src="<?php echo base_url(); ?>public/images/YTthumb_210x157.png" alt="YouTube thumbnail - Pirate Install Fix" />
+					</a>
+				</figure>
+				<h1>
+					<a href="">Pirate Install Fix</a>
+				</h1>
 			</div>
 			<div class="large-3 columns vid-featured">
-				<a href=""><img src="assets/images/YTthumb_210x157.png" alt="YouTube thumbnail - C# Tutorial" /></a>
-				<a href=""><h1>C# Tutorial</h1></a>
+				<figure>
+					<a href="">
+						<img src="<?php echo base_url(); ?>public/images/YTthumb_210x157.png" alt="YouTube thumbnail - C# Tutorial" />
+					</a>
+				</figure>
+				<h1>
+					<a href="">C# Tutorial</a>
+				</h1>
 			</div>
 			<div class="large-3 columns vid-featured">
-				<a href=""><img src="assets/images/YTthumb_210x157.png" alt="YouTube thumbnail - Fake Block Promo" /></a>
-				<a href=""><h1>Fake Block Promo</h1></a>
+				<figure>
+					<a href="">
+						<img src="<?php echo base_url(); ?>public/images/YTthumb_210x157.png" alt="YouTube thumbnail - Fake Block Promo" />
+					</a>
+				</figure>
+				<h1>
+					<a href="">Fake Block Promo</a>
+				</h1>
 			</div>
 			<div class="large-3 columns">
 				<article>
@@ -53,7 +71,7 @@
 				</article>
 			</div>
 		</div>
-	</div>
+<!--	</div>
 	<footer>
 		<ul id="social-media">
 			<li><a href=""><img src="assets/images/fb-29x29.png" alt="Facebook Logo" /></a></li>
@@ -73,4 +91,4 @@
 	</script> 
 
 </body>
-</html>
+</html>-->
