@@ -12,7 +12,7 @@ h1 {
 	font-size: 1.500em;
 	margin: 0;
 }
-p, label, li, .btn-main {
+p, label, li, .btn-lg, .btn-sm {
 	font-family: "Source Sans Pro", sans-serif;
 	font-weight: 400;
 }
@@ -69,9 +69,8 @@ body {
 #home-gallery div:last-child {
 	padding-right: 0px;
 }*/
-.btn-main {
+.btn-lg, .btn-sm {
 	display: inline-block;
-	padding: 15px 60px;
 	background: #5f45aa;
 	background: -webkit-gradient(linear, left top, left bottom, from(#8570c2), to(#5f45aa));
 	background: -moz-linear-gradient(top,  #faa51a,  #f47a20);
@@ -81,15 +80,21 @@ body {
 	border: 1px solid #b4a5e1;
 	border-radius: 3px;
 }
-.btn-main:hover {
+.btn-lg:hover, .btn-sm:hover {
 	color: #f0f0f0;
 	background: #8570c2;
 }
-.btn-main:active {
+.btn-lg:active, .btn-sm:active {
 	background: #5f45aa;
 	background: -webkit-gradient(linear, left top, left bottom, from(#8570c2), to(#b4a5e1));
 	background: -moz-linear-gradient(top,  #faa51a,  #f47a20);
 	border: 1px solid #5f45aa;
+}
+.btn-lg {
+	padding: 15px 60px;
+}
+.btn-sm {
+	padding: 12px 45px;
 }
 #home-gallery img {
 	width: 100%;
@@ -124,13 +129,13 @@ body {
 #detail-copy p{
 	padding-bottom: 20px;
 }
-#detail-copy .btn-main {
+#detail-copy .btn-lg {
 	float: right;
 }
 .price {
 	font-weight: 600;
 }
-#contact .btn-main {
+#contact .btn-sm {
 	float: right;
 }
 a h1, a, a:hover {

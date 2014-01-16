@@ -15,7 +15,7 @@
 				<label for="message">Message*</label>
 				<textarea rows="5" placeholder="Please enter your message here"></textarea>
 				<p><i>*Required</i></p>
-				<input class="btn-main" type="submit" name="submit" value="Send" />
+				<input class="btn-sm" type="submit" name="submit" value="Send" />
 			</form>
 		</div>	
 	</div>

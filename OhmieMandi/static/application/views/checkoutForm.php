@@ -82,7 +82,7 @@
 	</div>
 	<div class="large-2 columns">
 		<img src="" alt="small thumbnail of Steel Hawks" />
-		<a href="#" class="btn-main">Confirm</a>
+		<a href="#" class="btn-lg">Confirm</a>
 	</form>
 	</div>
 </div>
