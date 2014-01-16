@@ -76,6 +76,8 @@ body {
 }
 #home-gallery img {
 	width: 100%;
+	outline: 3px solid #a4a4a4;
+	outline-offset: -3px;
 }
 #home-gallery ul li, #videos #vid-featured ul li {
 	display: inline-block;
@@ -87,10 +89,17 @@ body {
 	padding: 0;
 }
 #detail-gallery img:first-child {
-	padding: 0 20px 20px 0;
+	margin: 0 20px 20px 0;
 }
 #detail-gallery img{
 	float: left;
+	outline: 3px solid #a4a4a4;
+	outline-offset: -3px;
+}
+#detail-gallery figure {
+	border: 3px solid #a4a4a4;
+	margin: -3px;
+	display: inline-block;
 }
 #detail-copy {
 	padding: 0;
