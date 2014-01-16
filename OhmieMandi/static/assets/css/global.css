@@ -73,6 +73,9 @@ body {
 #home-gallery {
 	margin: 0 auto;
 }
+#detail-gallery img{
+	padding: 0px, 10px, 10px;
+}
 a h1, a, a:hover {
 	color: #5f45aa;
 }
