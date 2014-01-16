@@ -14,6 +14,8 @@
 				<input type="email" name="email" placeholder="johndoe@example.com" />
 				<label for="message">Message*</label>
 				<textarea rows="5" placeholder="Please enter your message here"></textarea>
+				<p><i>*Required</i></p>
+				<input class="btn-main" type="submit" name="submit" value="Send" />
 			</form>
 		</div>	
 	</div>
