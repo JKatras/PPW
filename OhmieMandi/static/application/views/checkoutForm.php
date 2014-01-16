@@ -81,7 +81,7 @@
 			<input type="email" name="email" placeholder="" />
 	</div>
 	<div class="large-2 columns">
-		<img src="" alt="small thumbnail of Steel Hawks" />
+		<!--<img src="" alt="small thumbnail of Steel Hawks" />-->
 		<a href="#" class="btn-lg">Confirm</a>
 	</form>
 	</div>
