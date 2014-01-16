@@ -1,9 +1,9 @@
 <div class="main-content" id="detail">
 	<div class="row">
 		<div class="large-6 columns">		
-			<img src="" alt="" />
-			<img src="" alt="" />
-			<img src="" alt="" />
+			<img src="<?php echo base_url(); ?>public/images/sh-thumb-210x210.png" alt="" />
+			<img src="<?php echo base_url(); ?>public/images/sh-thumb2-210x210.png" alt="" />
+			<img src="<?php echo base_url(); ?>public/images/sh-thumb-440x210.png" alt="" />
 		</div>
 		<div class="large-6 columns">
 			<h1>Steel Hawks</h1>
@@ -11,6 +11,10 @@
 			<p>Requires 186MB of free space</p>
 			<p>Compatibility: Mac OSX 10.6 or higher</p>
 			<p class="price">$3.99</p>
+			<br />
+			<?php echo
+			"<a href=?action=checkout class='button'>Download</a>"
+			?>
 		</div>
 		
 	</div>

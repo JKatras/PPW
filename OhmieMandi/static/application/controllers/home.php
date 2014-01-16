@@ -25,7 +25,7 @@ class Home extends CI_controller {
 			if($_GET["action"]=="checkout"){
 //				$data['regionId'] = $this->usersModel->getRegionList();
 //				$this->load->view('regionBody', $data);
-				$this->load->view('checkout');
+				$this->load->view('checkoutForm');
 			}
 			if($_GET["action"]=="videos"){
 			//	$view->getView("views/contactForm.php");

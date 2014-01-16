@@ -15,15 +15,16 @@
 <div id="wrapper">
 	<header>
 		<h1>
-			<a href="index.html">
-				<img id="logo" src="<?php echo base_url(); ?>public/images/OM_logo_purple_70x70.png" alt="OhmieMandi Logo" />
-				<img id="logo-tag" src="<?php echo base_url(); ?>public/images/OM-tag.png" alt="OhmieMandi" />
-			</a>
+		<?php echo
+			"<a href=?action=home>
+				<img id='logo' src=".base_url()."public/images/OM_logo_purple_70x70.png alt='OhmieMandi Logo' />
+				<img id='logo-tag' src=".base_url()."public/images/OM-tag.png alt='OhmieMandi' />
+			</a>"
+		?>
 		</h1>
 		<nav>
 			<ul>
-			<?php
-			echo
+			<?php echo
 				"<li class='active'>
 					<h1>
 						<a href=?action=home>Games</a>
