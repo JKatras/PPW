@@ -16,6 +16,12 @@ p, label, li {
 	font-family: "Source Sans Pro", sans-serif;
 	font-weight: 400;
 }
+p {
+	color: #292929;
+}
+label {
+	color: #3e3e3e;
+}
 header {
 	height: 70px;
 	margin-bottom: 30px;
@@ -64,6 +70,10 @@ body {
 #home-gallery div:last-child {
 	padding-right: 0px;
 }*/
+.btn-main {
+	padding: 15px, 60px;
+	
+}
 #home-gallery img {
 	width: 100%;
 }
@@ -105,6 +115,7 @@ article {
 }
 input[type="text"], input[type="email"], textarea, select {
 	background-color: #faf6e1;
+	border-radius: 2px;
 }
 textarea {
 	resize: vertical;
