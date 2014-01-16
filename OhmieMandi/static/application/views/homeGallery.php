@@ -10,7 +10,7 @@
 				?>
 			</figure>
 			<h1>
-				<a href="detail.html">Steel Hawks</a>
+				<?php echo "<a href=?action=detail>Steel Hawks</a>" ?>
 			</h1>
 			<p>High-flying fun over the Pacific!</p>
 		</div>
@@ -24,7 +24,7 @@
 				?>
 			</figure>
 			<h1>
-				<a href="">Fake Block</a>
+				<?php echo "<a href=?action=detail>Fake Block</a>" ?>
 			</h1>
 			<p>Beat your friends or beat the clock, but look out for Fake Block.</p>
 		</div>
@@ -38,7 +38,7 @@
 				?>
 			</figure>
 			<h1>
-				<a href="">Pirate Poker</a>
+				<?php echo "<a href=?action=detail>Pirate Poker</a>" ?>
 			</h1>
 			<p>Think you can bluff a pirate?</p>
 		</div>	
