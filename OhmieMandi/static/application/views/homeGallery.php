@@ -1,4 +1,4 @@
-<div class="main-content" id="home-gallery">
+<section class="main-content" id="home-gallery">
 	<!--<div class="row">-->
 		<!--<div class="large-4 columns">
 			<figure>
@@ -89,4 +89,4 @@
 	</ul>
 
 	<!--</div>-->
-</div>
+</section>
