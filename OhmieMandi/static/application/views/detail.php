@@ -14,7 +14,7 @@
 			</ul>
 			<p class="price">$3.99</p>
 			<?php echo
-			"<a href=?action=checkout class='btn-lg'>Download</a>"
+			"<h2><a href=?action=checkout class='btn-lg'>Download</a></h2>"
 			?>
 		</div>
 		
