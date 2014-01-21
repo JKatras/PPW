@@ -1,5 +1,5 @@
 <?php  
-class OM_Controller extends CI_Controller{
+class MY_Controller extends CI_Controller{
 	
 	public $data = array();
 	
