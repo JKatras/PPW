@@ -1,4 +1,17 @@
-<?php
+<?php  
+class OM_Controller extends CI_Controller{
+	
+	public $data = array();
+	
+	function __construct() {
+		parent::__construct();
+		$this->data['errors'] = array();
+		$this->data['site_name'] = config_item('site_name');
+	}
+}
+?>
+
+<!--<?php
 class Home extends CI_controller {
 
 	public function __construct() {
@@ -41,4 +54,4 @@ class Home extends CI_controller {
 		
 	}
 }
-?>	
+?>	-->
