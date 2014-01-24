@@ -27,7 +27,14 @@
 			<?php echo
 				"<li class='active'>
 					<h1>
-						<a href=?action=home>Games</a>
+						<a href=?action=home data-dropdown=nav-hover data-options=is_hover:true>
+							Games
+						</a>
+						<ul id=nav-hover class=f-dropdown data-dropdown-content>
+							<li><h2><a href=?action=detail>Steel Hawks</a></h2></li>
+							<li><h2><a href=?action=detail>Fake Block</a></h2></li>
+							<li><h2><a href=?action=detail>Pirate Poker</a></h2></li>
+						</ul>
 					</h1>
 				</li>
 				

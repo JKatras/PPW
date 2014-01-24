@@ -12,6 +12,10 @@ h1 {
 	font-size: 1.500em;
 	margin: 0;
 }
+h2 {
+	font-family: "Lato", sans-serif;
+	font-size: 1.250em;
+}
 p, label, li, .btn-lg, .btn-sm {
 	font-family: "Source Sans Pro", sans-serif;
 	font-weight: 400;
@@ -48,6 +52,15 @@ nav {
 nav ul li{
 	display: inline-block;
 	padding-left: 50px;
+}
+#nav-hover li {
+	/*padding: 10px;*/
+	padding-left: 0px;
+	width: 100%;
+	float: left;
+}
+#nav-hover h2 {
+	margin: 0;
 }
 body {
 	background-color: #eeeeee;
@@ -166,6 +179,12 @@ textarea {
 	height: 150px;
 	margin: 0;
 }
+iframe {
+	width: 100%;
+	display: inline-block;
+	margin: 0 auto;
+	text-align: center;
+}
 footer {
 	margin-top: 100px;
 	border-top: 1px solid #8e8e8e;
@@ -198,5 +217,8 @@ footer ul {
 }
 nav ul li{
 	padding-left: 10px;
+}
+article {
+	text-align: center;
 }
 }

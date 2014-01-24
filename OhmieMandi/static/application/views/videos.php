@@ -2,32 +2,32 @@
 	<div class="row">
 		<div class="large-3 columns vid-featured">
 			<figure>
-				<a href="">
+				<a href=<?php echo "?action=vidDetail"; ?>>
 					<img src="<?php echo base_url(); ?>public/images/YTthumb_210x157.png" alt="YouTube thumbnail - Pirate Install Fix" />
 				</a>
 			</figure>
 			<h1>
-				<a href="">Pirate Install Fix</a>
+				<a href=<?php echo "?action=vidDetail"; ?>>Pirate Install Fix</a>
 			</h1>
 		</div>
 		<div class="large-3 columns vid-featured">
 			<figure>
-				<a href="">
+				<a href=<?php echo "?action=vidDetail"; ?>>
 					<img src="<?php echo base_url(); ?>public/images/YTthumb_210x157.png" alt="YouTube thumbnail - C# Tutorial" />
 				</a>
 			</figure>
 			<h1>
-				<a href="">C# Tutorial</a>
+				<a href=<?php echo "?action=vidDetail"; ?>>C# Tutorial</a>
 			</h1>
 		</div>
 		<div class="large-3 columns vid-featured">
 			<figure>
-				<a href="">
+				<a href=<?php echo "?action=vidDetail"; ?>>
 					<img src="<?php echo base_url(); ?>public/images/YTthumb_210x157.png" alt="YouTube thumbnail - Fake Block Promo" />
 				</a>
 			</figure>
 			<h1>
-				<a href="">Fake Block Promo</a>
+				<a href=<?php echo "?action=vidDetail"; ?>>Fake Block Promo</a>
 			</h1>
 		</div>
 		<div class="large-3 columns">

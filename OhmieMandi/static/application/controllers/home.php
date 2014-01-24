@@ -27,6 +27,10 @@ class Home extends CI_controller {
 
 				$this->load->view('videos');
 			}
+			if($_GET["action"]=="vidDetail"){
+
+				$this->load->view('vidDetail');
+			}
 			if($_GET["action"]=="contact"){
 
 				$this->load->view('contactForm');
