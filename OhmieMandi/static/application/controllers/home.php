@@ -3,6 +3,7 @@ class Home extends CI_controller {
 
 	public function __construct() {
 		parent::__construct();
+		$this->load->model('gameModel');
 	}
 	
 	public function index() {
@@ -12,8 +13,8 @@ class Home extends CI_controller {
 		if(!empty($_GET["action"])){
 		
 			if($_GET["action"]=="home"){
-
-				$this->load->view('homeGallery');
+				$data['gameId'] = $this->gameModel->getGameInfo();
+				$this->load->view('homeGallery', $data);
 			}
 			if($_GET["action"]=="detail"){
 
