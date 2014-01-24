@@ -1,7 +1,9 @@
 <section class="main-content" id="vid-detail">
 <div class="row">
 	<div class="small-12 columns medium-8 columns">
-		<iframe width="640" height="480" src="//www.youtube.com/embed/mmCnQDUSO4I" frameborder="0" allowfullscreen></iframe>
+		<article>
+			<iframe width="640" height="480" src="//www.youtube.com/embed/mmCnQDUSO4I" frameborder="0" allowfullscreen></iframe>
+		</article>
 	</div>
 	<div class="small-12 columns medium-4 columns">
 		<article>
