@@ -24,6 +24,7 @@
 		</h1>
 		<nav>
 			<ul>
+<!--**Dropdown links are not yet being populated by DB**-->
 			<?php echo
 				"<li class='active'>
 					<h1>
@@ -31,7 +32,7 @@
 							Games
 						</a>
 						<ul id=nav-hover class=f-dropdown data-dropdown-content>
-							<li><h2><a href=?action=detail>Steel Hawks</a></h2></li>
+							<li><h2><a href=?action=detail&gameId=1>Steel Hawks</a></h2></li>
 							<li><h2><a href=?action=detail>Fake Block</a></h2></li>
 							<li><h2><a href=?action=detail>Pirate Poker</a></h2></li>
 						</ul>

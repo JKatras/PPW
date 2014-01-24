@@ -17,8 +17,8 @@ class Home extends CI_controller {
 				$this->load->view('homeGallery', $data);
 			}
 			if($_GET["action"]=="detail"){
-
-				$this->load->view('detail');
+				$result = $this->gameModel->getGameDetail($_GET['gameId']);
+				$this->load->view('detail', $result);
 			}
 			if($_GET["action"]=="checkout"){
 

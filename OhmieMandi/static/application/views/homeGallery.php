@@ -54,12 +54,12 @@
 	echo "
 		<li>
 			<figure>
-				<a href=?action=detail>
+				<a href=?action=detail&gameId=${row['gameId']}>
 					<img src=".base_url()."public/images/${row['mainthumb']} alt='a P-38 laying down fire' />
 				</a>
 			</figure>
 			<h1>
-				 <a href=?action=detail>${row['name']}</a> 
+				 <a href=?action=detail&gameId=${row['gameId']}>${row['name']}</a> 
 			</h1>
 			<p>${row['slug']}</p>
 		</li>";

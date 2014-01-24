@@ -14,6 +14,10 @@ class GameModel extends CI_Model{
 		$query = $this->db->get_where('games', array('gameId'=>$gameId));
 		return $query->row_array();
 	}
+	public function getGameDetail($gameId) {
+		$query = $this->db->get_where("games", array('gameId'=>$gameId));
+		return $query->row_array();
+	}
 //	public function getRegionList($regionId = FALSE) {
 //
 //		if ($regionId === FALSE) {
