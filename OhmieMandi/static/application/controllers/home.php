@@ -7,13 +7,13 @@ class Home extends CI_controller {
 	}
 	
 	public function index() {
-		
-		$this->load->view('header');
+		$data['gameId'] = $this->gameModel->getGameInfo();
+		$this->load->view('header', $data);
 		
 		if(!empty($_GET["action"])){
 		
 			if($_GET["action"]=="home"){
-				$data['gameId'] = $this->gameModel->getGameInfo();
+//				$data['gameId'] = $this->gameModel->getGameInfo();
 				$this->load->view('homeGallery', $data);
 			}
 			if($_GET["action"]=="detail"){
@@ -38,8 +38,8 @@ class Home extends CI_controller {
 			}
 			
 		} else {
-
-			$this->load->view('homeGallery');
+//			$data['gameId'] = $this->gameModel->getGameInfo();
+			$this->load->view('homeGallery', $data);
 		}
 		
 		$this->load->view('footer');

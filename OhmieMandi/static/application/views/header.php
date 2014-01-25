@@ -24,33 +24,40 @@
 		</h1>
 		<nav>
 			<ul>
-<!--**Dropdown links are not yet being populated by DB**-->
-			<?php echo
-				"<li class='active'>
-					<h1>
-						<a href=?action=home data-dropdown=nav-hover data-options=is_hover:true>
-							Games
-						</a>
-						<ul id=nav-hover class=f-dropdown data-dropdown-content>
-							<li><h2><a href=?action=detail&gameId=1>Steel Hawks</a></h2></li>
-							<li><h2><a href=?action=detail>Fake Block</a></h2></li>
-							<li><h2><a href=?action=detail>Pirate Poker</a></h2></li>
-						</ul>
-					</h1>
-				</li>
-				
 				<li>
 					<h1>
-						<a href=?action=videos>Videos</a>
+					<!--allows for dropdown links to show on hover-->
+					<a class="<?php if($this->uri->uri_string()=="?action=home"){echo "active";}?>" href="?action=home" data-dropdown=nav-hover data-options=is_hover:true>
+						Games
+					</a>
+					<ul id=nav-hover class=f-dropdown data-dropdown-content>		
+				<?php
+				foreach ($gameId as $g => $row) {
+				echo "
+						<li>
+							<h2>
+								<a href=?action=detail&gameId=${row['gameId']}>
+									${row['name']}
+								</a>
+							</h2>
+						</li>";
+				}	?>
+								
+					</ul>
 					</h1>
 				</li>
-				
-				<li>
-					<h1>
-						<a href=?action=contact>Contact</a>
-					</h1>
-				</li>"
-				?>
-			</ul>
-		</nav>
-	</header>
+					
+			<li>
+				<h1>
+					<a href=?action=videos>Videos</a>
+				</h1>
+			</li>
+			
+			<li>
+				<h1>
+					<a href=?action=contact>Contact</a>
+				</h1>
+			</li>
+		</ul>
+	</nav>
+</header>
