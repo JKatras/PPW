@@ -1,13 +1,13 @@
 <footer>
-	<ul id="social-media">
+	<!--<ul id="social-media">
 		<li><a href=""><img src="<?php echo base_url(); ?>public/images/fb-29x29.png" alt="Facebook Logo" /></a></li>
 		<li><a href=""><img src="<?php echo base_url(); ?>public/images/twitter-29x33.png" alt="Twitter Logo" /></a></li>
 		<li><a href=""><img src="<?php echo base_url(); ?>public/images/li-29x29.png" alt="LinkedIn Logo" /></a></li>
 	</ul>
 	<ul>
 		<li><p>&copy;OhmieMandi 2013</p></li>
-		<li><a href="dashboard">CMS</a></li>
-	</ul>
+		<li><a href="dashboard/home">CMS</a></li>
+	</ul>-->
 </footer>
 </div>
 	<script src="<?php echo base_url(); ?>public/js/vendor/custom.modernizr.js"></script>
@@ -16,7 +16,7 @@
 	<script> 
 		$(document).foundation();
 	</script> 
-	<script type="text/javascript">
+	<!--<script type="text/javascript">
 //		google analytics tracker
 	  var _gaq = _gaq || [];
 	  _gaq.push(['_setAccount', 'UA-47163924-1']);
@@ -28,6 +28,6 @@
 	    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
 	  })();
 
-	</script> 
+	</script> -->
 </body>
 </html>
