@@ -36,7 +36,9 @@ class Home extends CI_controller {
 
 				$this->load->view('contactForm');
 			}
-			
+//			if($_GET["action"]=="cms") {
+//				redirect('dashboard/home');
+//			}
 		} else {
 //			$data['gameId'] = $this->gameModel->getGameInfo();
 			$this->load->view('homeGallery', $data);
