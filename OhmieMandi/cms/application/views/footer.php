@@ -6,7 +6,7 @@
 	</ul>
 	<ul>
 		<li><p>&copy;OhmieMandi 2013</p></li>
-		<li><a href="dashboard">CMS</a></li>
+		<li><a href="dashboard/home">CMS</a></li>
 	</ul>
 </footer>
 </div>

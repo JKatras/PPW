@@ -190,6 +190,9 @@ iframe {
 	margin: 0 auto;
 	text-align: center;
 }
+th {
+	text-align: left;
+}
 footer {
 	margin-top: 100px;
 	border-top: 1px solid #8e8e8e;

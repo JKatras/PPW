@@ -1,25 +1,24 @@
 <h3>Content Management System</h3>
 
 <?php
-echo anchor('webpages/create', '<p>Create New Page</p>');
+echo anchor('dashboard/create', '<p>Add New Product</p>');
 ?>
-
 
 <table>
     <tr>
-    	<th width="450">Page Headline</th>
+    	<th width="600"><h4>Listed Games</h4></th>
     	<th width="150"></th>
     	<!--<th>Edit</th>
     	<th>Delete</th>-->
     </tr>
     <?php
-    foreach($query->result() as $row) {
-        $edit_url = base_url()."webpages/create/".$row->id;
+    foreach($gameId as $g => $row) {
+        $edit_url = base_url()."dashboard/create/${row['gameId']}";
 //      $delete_url = base_url()."webpages/deleteconf/".$row->id;
-        $page_headline = $row->page_headline;
+        $name = "${row['name']}";
     ?>
     <tr>
-    	<td><?php echo $page_headline; ?></td>
+    	<td><?php echo $name; ?></td>
     	<td><?php echo anchor($edit_url, 'Edit');?></td>
     </tr>
     <?php 

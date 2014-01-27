@@ -1,4 +1,5 @@
 <footer>
+	<p><a href="users/signout">Sign Out</a></p>
 	<!--<ul id="social-media">
 		<li><a href=""><img src="<?php echo base_url(); ?>public/images/fb-29x29.png" alt="Facebook Logo" /></a></li>
 		<li><a href=""><img src="<?php echo base_url(); ?>public/images/twitter-29x33.png" alt="Twitter Logo" /></a></li>

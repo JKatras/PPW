@@ -4,8 +4,8 @@
 <ul>
 	<?php
 	echo 
-	'<li>'.anchor('?action=manage', 'Content Management System').'</li>
-	 <li>'.anchor('?signout=', 'Sign Out').'</li>'
+	'<li>'.anchor('dashboard/manage', 'Content Management System').'</li>
+	 <li>'.anchor('dashboard/signout', 'Sign Out').'</li>'
 	?>
 </ul>
 

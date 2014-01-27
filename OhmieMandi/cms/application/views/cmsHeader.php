@@ -7,7 +7,7 @@
 	<title>Content Management</title> 
 	<link rel="stylesheet" href="<?php echo base_url(); ?>public/css/normalize.css"> 
 	<link rel="stylesheet" href="<?php echo base_url(); ?>public/css/foundation.min.css">
-	<!--<link rel="stylesheet" href="<?php echo base_url(); ?>public/css/global.css" />-->
+	<link rel="stylesheet" href="<?php echo base_url(); ?>public/css/cmsStyle.css" />
 	<!--<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Lato:300' rel='stylesheet' type='text/css'>-->
 </head>
