@@ -7,7 +7,7 @@
 
 echo validation_errors("<p style='color: red;'>", "</p>");
 
-echo form_open('dashboard/submit/'.$update_id);
+echo form_open('dashboard/submit/'.$gameId);
 ?>
 <div class="row">
 	<div class="small-12 columns large-6 columns">

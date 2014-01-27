@@ -6,7 +6,7 @@ parent::__construct();
 }
 
 function get_table() {
-$table = "webpages";
+$table = "games";
 return $table;
 }
 
@@ -25,9 +25,9 @@ $query=$this->db->get($table);
 return $query;
 }
 
-function get_where($id){
+function get_where($gameId){
 $table = $this->get_table();
-$this->db->where('id', $id);
+$this->db->where('gameId', $gameId);
 $query=$this->db->get($table);
 return $query;
 }

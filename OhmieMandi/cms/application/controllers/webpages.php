@@ -24,8 +24,8 @@ function get_data_from_post() {
 	return $data;
 }
 
-function get_data_from_db($update_id) {
-	$query = $this->get_where($update_id);
+function get_data_from_db($gameId) {
+	$query = $this->get_where($gameId);
 	foreach ($query->result() as $row) {
 		$data['page_headline'] = $row->page_headline;
 		$data['page_title'] = $row->page_title;
@@ -41,20 +41,20 @@ function get_data_from_db($update_id) {
 	return $data;
 }
 function create() {	
-	$update_id = $this->uri->segment(3);
+	$gameId = $this->uri->segment(3);
 	$submit = $this->input->post('submit', TRUE);
 	
 	if ($submit=="Submit") {
 		$data = $this->get_data_from_post();
 	}else {
-		if (is_numeric($update_id)) {
-			$data = $this->get_data_from_db($update_id);
+		if (is_numeric($gameId)) {
+			$data = $this->get_data_from_db($gameId);
 		}
 	}
 	if (!isset($data)) {
 		$data = $this->get_data_from_post();
 	}
-	$data['update_id'] = $update_id;
+	$data['gameId'] = $gameId;
 	
 	$data['view_file'] = 'create';
 	$this->load->module('template');
@@ -72,9 +72,9 @@ function submit() {
 	}else{
 		$data = $this->get_data_from_post();
 		$data['page_url'] = url_title($data['page_headline']);
-		$update_id = $this->uri->segment(3);
-		if (is_numeric($update_id)) {
-			$this->_update($update_id, $data);
+		$gameId = $this->uri->segment(3);
+		if (is_numeric($gameId)) {
+			$this->_update($gameId, $data);
 		}else {
 			$this->_insert($data);
 		}

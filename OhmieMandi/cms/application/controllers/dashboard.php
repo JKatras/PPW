@@ -20,29 +20,29 @@ class Dashboard extends CI_controller {
 		$this->load->view('cmsFooter');
 	}
 	public function create() {
+//		$this->load->view('cmsHeader');
+//		$this->load->view('create');
+//		$this->load->view('cmsFooter');
+		
+		$gameId = $this->uri->segment(3);
+		$submit = $this->input->post('submit', TRUE);
+	
+		if ($submit=="Submit") {
+			$data = $this->get_data_from_post();
+		}else {
+			if (is_numeric($gameId)) {
+				$data = $this->get_data_from_db($gameId);
+			}
+		}
+		if (!isset($data)) {
+			$data = $this->get_data_from_post();
+		}
+		$data['gameId'] = $gameId;
+		
 		$this->load->view('cmsHeader');
 		$this->load->view('create');
 		$this->load->view('cmsFooter');
-		
-//		$update_id = $this->uri->segment(3);
-//	$submit = $this->input->post('submit', TRUE);
-//	
-//	if ($submit=="Submit") {
-//		$data = $this->get_data_from_post();
-//	}else {
-//		if (is_numeric($update_id)) {
-//			$data = $this->get_data_from_db($update_id);
-//		}
-//	}
-//	if (!isset($data)) {
-//		$data = $this->get_data_from_post();
-//	}
-//	$data['update_id'] = $update_id;
-//	
-//	$data['view_file'] = 'create';
-//	$this->load->module('template');
-//	$this->template->admin($data);
-	}
+		}
 	function submit() {
 		$this->load->library('form_validation');
 	
@@ -54,9 +54,9 @@ class Dashboard extends CI_controller {
 		}else{
 			$data = $this->get_data_from_post();
 			$data['page_url'] = url_title($data['page_headline']);
-			$update_id = $this->uri->segment(3);
-			if (is_numeric($update_id)) {
-				$this->_update($update_id, $data);
+			$gameId = $this->uri->segment(3);
+			if (is_numeric($gameId)) {
+				$this->_update($gameId, $data);
 			}else {
 				$this->_insert($data);
 			}
@@ -68,6 +68,50 @@ class Dashboard extends CI_controller {
 		$this->load->view('cmsHeader');
 		$this->load->view('cmsLinks');
 		$this->load->view('cmsFooter');
+	}
+	function get_data_from_post() {
+		$data['name'] = $this->input->post('name', TRUE);
+		$data['keywords'] = $this->input->post('keywords', TRUE);
+		$data['slug'] = $this->input->post('slug', TRUE);
+		$data['description'] = $this->input->post('description', TRUE);
+		$data['requirements'] = $this->input->post('requirements', TRUE);
+		$data['compatibility'] = $this->input->post('compatibility', TRUE);
+		$data['price'] = $this->input->post('price', TRUE);
+		return $data;
+	}
+	
+	function get_data_from_db($gameId) {
+		$query = $this->get_where($gameId);
+//		$data['gameId'] = $this->gameModel->getGameInfo();
+//		$result = $this->gameModel->getGameDetail($_GET['gameId']);
+//				$this->load->view('detail', $result);
+//		foreach ($result as $r => $row) {
+//			$data['name'] = "${row['name']}";
+//			$data['keywords'] = "${row['keywords']}";
+//			$data['slug'] = "${row['slug']}";
+//			$data['description'] = "${row['description']}";
+//			$data['requirements'] = "${row['requirements']}";
+//			$data['compatibility'] = "${row['compatibility']}";
+//			$data['price'] = "${row['price']}";
+//		}
+		foreach ($query->result() as $row) {
+		$data['name'] = $row->name;
+		$data['keywords'] = $row->keywords;
+		$data['slug'] = $row->slug;
+		$data['description'] = $row->description;
+//		$data['page_content'] = $row->page_content;
+	}
+		
+		if (!isset($data)) {
+			$data = '';
+		} 
+		
+		return $data;
+	}
+	function get_where($id){
+		$this->load->model('mdl_webpages');
+		$query = $this->mdl_webpages->get_where($id);
+		return $query;
 	}
 //		if(!empty($_GET["action"])){
 //			
