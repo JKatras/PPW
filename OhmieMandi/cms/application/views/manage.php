@@ -1,7 +1,7 @@
 <h3>Content Management System</h3>
 
 <?php
-echo anchor('dashboard/create', '<p>Add New Product</p>');
+echo '<p>'.anchor('dashboard/create', 'Add New Product').'</p>';
 ?>
 
 <table>

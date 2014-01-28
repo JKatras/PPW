@@ -44,15 +44,15 @@ $table = $this->get_table();
 $this->db->insert($table, $data);
 }
 
-function _update($id, $data){
+function _update($gameId, $data){
 $table = $this->get_table();
-$this->db->where('id', $id);
+$this->db->where('gameId', $gameId);
 $this->db->update($table, $data);
 }
 
-function _delete($id){
+function _delete($gameId){
 $table = $this->get_table();
-$this->db->where('id', $id);
+$this->db->where('gameId', $gameId);
 $this->db->delete($table);
 }
 
@@ -73,11 +73,11 @@ return $num_rows;
 
 function get_max() {
 $table = $this->get_table();
-$this->db->select_max('id');
+$this->db->select_max('gameId');
 $query = $this->db->get($table);
 $row=$query->row();
-$id=$row->id;
-return $id;
+$gameId=$row->gameId;
+return $gameId;
 }
 
 function _custom_query($mysql_query) {

@@ -40,7 +40,7 @@ class Dashboard extends CI_controller {
 		$data['gameId'] = $gameId;
 		
 		$this->load->view('cmsHeader');
-		$this->load->view('create');
+		$this->load->view('create', $data);
 		$this->load->view('cmsFooter');
 		}
 	function submit() {
@@ -53,7 +53,7 @@ class Dashboard extends CI_controller {
 			$this->create();
 		}else{
 			$data = $this->get_data_from_post();
-			$data['page_url'] = url_title($data['page_headline']);
+//			$data['page_url'] = url_title($data['page_headline']);
 			$gameId = $this->uri->segment(3);
 			if (is_numeric($gameId)) {
 				$this->_update($gameId, $data);
@@ -61,7 +61,7 @@ class Dashboard extends CI_controller {
 				$this->_insert($data);
 			}
 			
-			redirect('webpages/manage');
+			redirect('dashboard/manage');
 		}
 	}
 	public function delete(){
@@ -99,6 +99,9 @@ class Dashboard extends CI_controller {
 		$data['keywords'] = $row->keywords;
 		$data['slug'] = $row->slug;
 		$data['description'] = $row->description;
+		$data['requirements'] = $row->requirements;
+		$data['compatibility'] = $row->compatibility;
+		$data['price'] = $row->price;
 //		$data['page_content'] = $row->page_content;
 	}
 		
@@ -108,10 +111,18 @@ class Dashboard extends CI_controller {
 		
 		return $data;
 	}
-	function get_where($id){
+	function get_where($gameId){
 		$this->load->model('mdl_webpages');
-		$query = $this->mdl_webpages->get_where($id);
+		$query = $this->mdl_webpages->get_where($gameId);
 		return $query;
+	}
+	function _update($gameId, $data){
+		$this->load->model('mdl_webpages');
+		$this->mdl_webpages->_update($gameId, $data);
+	}
+	function _insert($data){
+		$this->load->model('mdl_webpages');
+		$this->mdl_webpages->_insert($data);
 	}
 //		if(!empty($_GET["action"])){
 //			
