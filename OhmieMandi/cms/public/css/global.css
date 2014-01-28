@@ -157,6 +157,10 @@ body {
 #detail-copy .btn-lg {
 	float: right;
 }
+.thumb-210 {
+	max-height: 210px;
+	max-width: 210px;
+}
 .price {
 	font-weight: 600;
 }

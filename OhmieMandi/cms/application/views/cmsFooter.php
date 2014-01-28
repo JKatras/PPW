@@ -2,6 +2,7 @@
 <div class="row">
 	<div class="small-12 columns">
 		<p><a href="users/signout">Sign Out</a></p>
+		<p><a href="http://mandiohmie.com" target="_blank">Preview Site</a>
 	</div>
 </div>
 </footer>
