@@ -5,6 +5,7 @@ class Dashboard extends CI_controller {
 	public function __construct() {
 		parent::__construct();
 		$this->load->model('gameModel');
+		$this->load->model('imgModel');
 	}
 	
 	public function home() {
@@ -15,8 +16,9 @@ class Dashboard extends CI_controller {
 	}
 	public function manage() {
 		$data['gameId'] = $this->gameModel->getGameInfo();
+		$img['imgId']= $this->imgModel->getImgInfo();
 		$this->load->view('cmsHeader');
-		$this->load->view('manage', $data);
+		$this->load->view('manage', $data, $img);
 		$this->load->view('cmsFooter');
 	}
 	public function create() {
