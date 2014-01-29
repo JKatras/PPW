@@ -6,8 +6,6 @@
 			<li><img src="<?php echo base_url(); ?>public/images/sh-thumb2-210x210.png" alt="P-38 takes flak against a mini-boss" /></li>
 			<li><img src="<?php echo base_url(); ?>public/images/sh-thumb-440x210.png" alt="P-38 versus giant airship" /></li>
 		</ul>
-		
-		
 		</div>
 		<div id="detail-copy" class="small-12 large-6 columns">
 		<?php

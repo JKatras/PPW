@@ -7,6 +7,9 @@
 	<ul>
 		<li><p>&copy;OhmieMandi 2013</p></li>
 	</ul>
+	<ul>
+		<li><a href="users/login">CMS</a></li>
+	</ul>
 </footer>
 </div>
 	<script src="<?php echo base_url(); ?>public/js/vendor/custom.modernizr.js"></script>

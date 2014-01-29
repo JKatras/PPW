@@ -46,4 +46,4 @@ class Home extends CI_controller {
 		
 	}
 }
-?>	
+?>
