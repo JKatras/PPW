@@ -7,6 +7,17 @@ html, body, div, span, applet, object, iframe, p, blockquote, pre, a, abbr, acro
 	font-size: 100%;
 }
 
+		header h1 {
+			background: url('../images/OM_logo_purple_70x70.png') no-repeat left top;
+		}
+		header a, header a:hover {
+			display: block; color: #666;
+			padding: 20px 0px 30px 75px;
+		}
+		header h1 strong { color: #333; }
+		
+
+
 h1 {
 	font-family: "Lato", sans-serif;
 	font-size: 1.500em;
@@ -220,17 +231,28 @@ footer ul {
 }
 
 @media (max-width: 690px) {
-.main-content ul {
-}
-#logo-tag {
-	visibility: hidden;
-	position: absolute;
-	left: 500px;
-}
-nav ul li{
-	padding-left: 10px;
-}
-article {
-	text-align: center;
-}
+	.main-content ul {}
+	
+	
+	/* Hide icon mobile */
+	/*
+	header h1 { background: none; }
+	header h1 a { padding-left: 0px; }
+	*/
+	
+	/* Hide text on mobile */
+	h1 a {
+		height: 70px; width: 70px; padding: 0px;
+		text-indent: -9999px;
+	}
+	
+	
+	
+	
+	nav ul li{
+		padding-left: 10px;
+	}
+	article {
+		text-align: center;
+	}
 }

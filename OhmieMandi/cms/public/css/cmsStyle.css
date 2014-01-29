@@ -4,3 +4,8 @@
 th {
 	text-align: left;
 }
+textarea {
+	resize: vertical;
+	height: 150px;
+	margin: 0;
+}

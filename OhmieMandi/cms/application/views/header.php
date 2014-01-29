@@ -14,49 +14,30 @@
 <body>
 <div id="wrapper">
 	<header>
-		<h1>
-		<?php echo
-			"<a href=?action=home>
-				<img id='logo' src=".base_url()."public/images/OM_logo_purple_70x70.png alt='OhmieMandi Logo' />
-				<img id='logo-tag' src=".base_url()."public/images/OM-tag.png alt='OhmieMandi' />
-			</a>"
-		?>
-		</h1>
+		<h1><a href="<?php echo base_url(); ?>"><strong>Ohmie</strong>Mandi</a></h1>
 		<nav>
 			<ul>
-				<li>
-					<h1>
+				<li <?php if ($currentPage == 'games') { echo 'class="current"'; } ?> >
 					<!--allows for dropdown links to show on hover-->
-					<a class="<?php if($this->uri->uri_string()=="?action=home"){echo "active";}?>" href="?action=home" data-dropdown=nav-hover data-options=is_hover:true>
+					<a href="<?php echo base_url(); ?>videos" data-dropdown=nav-hover data-options=is_hover:true>
 						Games
 					</a>
+					
 					<ul id=nav-hover class=f-dropdown data-dropdown-content>		
-				<?php
-				foreach ($gameId as $g => $row) {
-				echo "
+					<?php
+					foreach ($gameId as $g => $row) {
+					echo "
 						<li>
-							<h2>
-								<a href=?action=detail&gameId=${row['gameId']}>
-									${row['name']}
-								</a>
-							</h2>
+							<a href=detail/${row['gameId']}>
+								${row['name']}
+							</a>
 						</li>";
-				}	?>
-								
+					}?>		
 					</ul>
-					</h1>
 				</li>
 					
-			<li>
-				<h1>
-					<a href=?action=videos>Videos</a>
-				</h1>
-			</li>
-			
-			<li>
-				<h1>
-					<a href=?action=contact>Contact</a>
-				</h1>
+				<li <?php if ($currentPage == 'videos') { echo 'class="current"'; } ?> ><a href="<?php echo base_url(); ?>videos">Videos</a></li>
+				<li <?php if ($currentPage == 'contact') { echo 'class="current"'; } ?> ><a href="<?php echo base_url(); ?>contact">Contact</a></h1>
 			</li>
 		</ul>
 	</nav>

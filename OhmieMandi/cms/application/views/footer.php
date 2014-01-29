@@ -6,7 +6,9 @@
 	</ul>
 	<ul>
 		<li><p>&copy;OhmieMandi 2013</p></li>
-		<li><a href="dashboard/home">CMS</a></li>
+	</ul>
+	<ul>
+		<li><a href="users/login">CMS</a></li>
 	</ul>
 </footer>
 </div>
@@ -17,7 +19,7 @@
 		$(document).foundation();
 	</script> 
 	<script type="text/javascript">
-//		google analytics tracker
+//	google analytics tracker
 	  var _gaq = _gaq || [];
 	  _gaq.push(['_setAccount', 'UA-47163924-1']);
 	  _gaq.push(['_trackPageview']);

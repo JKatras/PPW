@@ -60,7 +60,7 @@ echo form_open('dashboard/submit/'.$gameId);
               'id'          => 'description',
               'value'       =>  $description,
               'rows'   		=> '20',
-              'cols'        => '50',
+//              'cols'        => '50',
             );
         	echo form_textarea($data); 
         	?>

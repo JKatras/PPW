@@ -1,0 +1,229 @@
+/* most of an Eric Myers reset*/
+html, body, div, span, applet, object, iframe, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp,small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+}
+
+h1 {
+	font-family: "Lato", sans-serif;
+	font-size: 1.500em;
+	margin: 0;
+}
+h2 {
+	font-family: "Lato", sans-serif;
+	font-size: 1.250em;
+}
+p, label, li, .btn-lg, .btn-sm {
+	font-family: "Source Sans Pro", sans-serif;
+	font-weight: 400;
+}
+p {
+	color: #292929;
+}
+label {
+	color: #3e3e3e;
+}
+header {
+	height: 70px;
+	margin-bottom: 30px;
+}
+header h1 {
+	float: left;
+}
+#logo {
+
+}
+.main-content {
+	clear: both;
+	margin-top: 30px;
+	
+}
+
+figure a {
+	display: block;
+}
+nav {
+	padding-top: 18px;
+	float: right;
+}
+nav ul li{
+	display: inline-block;
+	padding-left: 50px;
+}
+#nav-hover li {
+	/*padding: 10px;*/
+	padding-left: 0px;
+	width: 100%;
+	float: left;
+}
+#nav-hover h2 {
+	margin: 0;
+}
+body {
+	background-color: #eeeeee;
+	margin: 0 auto;
+}
+#wrapper {
+	list-style: none;
+	margin: 20px auto;
+	width: 90%;
+	max-width: 62.5rem;
+}
+#wrapper ul {
+	list-style: none;
+}
+.btn-lg, .btn-sm {
+	display: inline-block;
+	background: #5f45aa;
+	background: -webkit-gradient(linear, left top, left bottom, from(#8570c2), to(#5f45aa));
+	background: -moz-linear-gradient(top,  #faa51a,  #f47a20);
+	color: #f0f0f0;
+	font-weight: 600;
+	text-align: center;
+	border: 1px solid #b4a5e1;
+	border-radius: 3px;
+	cursor: pointer;
+}
+.btn-lg:hover, .btn-sm:hover {
+	color: #f0f0f0;
+	background: #8570c2;
+}
+.btn-lg:active, .btn-sm:active {
+	background: #5f45aa;
+	background: -webkit-gradient(linear, left top, left bottom, from(#8570c2), to(#b4a5e1));
+	background: -moz-linear-gradient(top,  #faa51a,  #f47a20);
+	border: 1px solid #5f45aa;
+}
+.btn-lg {
+	padding: 15px 60px;
+}
+.btn-sm {
+	padding: 12px 45px;
+}
+#home-gallery ul {
+	margin: 0 auto;
+}
+#home-gallery img {
+	outline: 3px solid #a4a4a4;
+	outline-offset: -3px;
+	/*width: 100%;*/
+}
+#home-gallery ul li, #videos #vid-featured ul li {
+	display: inline-block;
+}
+#home-gallery {
+	margin: 0 auto;
+	display: inline-block;
+}
+#home-gallery figure {
+	opacity: .6;
+}
+#home-gallery figure:before {
+/*	content: '';
+	background-image: url(../images/download-128.png);
+	position: relative;
+	width: 100%;
+	height: 100%;
+	display: inline-block;*/
+}
+#home-gallery figure:hover {
+	opacity: 1;
+}
+#detail-gallery {
+	padding: 0;
+}
+#detail-gallery img:first-child {
+	margin: 0 20px 20px 0;
+}
+#detail-gallery img{
+	float: left;
+	outline: 3px solid #a4a4a4;
+	outline-offset: -3px;
+}
+#detail-gallery figure {
+	border: 3px solid #a4a4a4;
+	margin: -3px;
+	display: inline-block;
+}
+#detail-copy {
+	padding: 0;
+}
+#detail-copy p{
+	padding-bottom: 20px;
+}
+#detail-copy .btn-lg {
+	float: right;
+}
+.price {
+	font-weight: 600;
+}
+#contact .btn-sm {
+	float: right;
+}
+a h1, a, a:hover {
+	color: #5f45aa;
+}
+nav h1 a{
+	color: #292929;
+}
+.active h1 a{
+	color: #5f45aa;
+}
+article {
+	text-align: right;
+}
+input[type="text"], input[type="email"], textarea, select {
+	background-color: #faf6e1;
+	border-radius: 2px;
+}
+textarea {
+	resize: vertical;
+	height: 150px;
+	margin: 0;
+}
+iframe {
+	width: 100%;
+	display: inline-block;
+	margin: 0 auto;
+	text-align: center;
+}
+footer {
+	margin-top: 100px;
+	border-top: 1px solid #8e8e8e;
+	padding-top: 20px;
+}
+#social-media {
+	padding-bottom: 15px;
+}
+#social-media a {
+	padding: 0 15px;
+}
+
+footer p {
+	color: #8e8e8e;
+}
+footer ul li{
+	display: inline-block;
+}
+footer ul {
+	text-align: center;
+}
+
+@media (max-width: 690px) {
+.main-content ul {
+}
+#logo-tag {
+	visibility: hidden;
+	position: absolute;
+	left: 500px;
+}
+nav ul li{
+	padding-left: 10px;
+}
+article {
+	text-align: center;
+}
+}

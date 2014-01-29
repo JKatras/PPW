@@ -41,6 +41,13 @@
 $route['default_controller'] = "home";
 $route['404_override'] = '';
 
+$route['contact'] = 'home/contact';
+$route['videos'] = 'home/videos';
+$route['home'] = 'home/home';
+$route['vidDetail'] = 'home/vidDetail';
+$route['checkout'] = 'home/checkout';
+$route['detail'] = 'home/detail';
+
 
 /* End of file routes.php */
 /* Location: ./application/config/routes.php */
