@@ -3,21 +3,21 @@ class Home extends CI_controller {
 
 	public function __construct() {
 		parent::__construct();
-		$this->load->model('gameModel');
+		$this->load->model('game_model');
 	}
 	
 	public function index() {
-		$data['gameId'] = $this->gameModel->getGameInfo();
+		$data['gameId'] = $this->game_model->getGameInfo();
 		$this->load->view('header', $data);
 		
 		if(!empty($_GET["action"])){
 		
 			if($_GET["action"]=="home"){
-//				$data['gameId'] = $this->gameModel->getGameInfo();
+//				$data['gameId'] = $this->game_model->getGameInfo();
 				$this->load->view('homeGallery', $data);
 			}
 			if($_GET["action"]=="detail"){
-				$result = $this->gameModel->getGameDetail($_GET['gameId']);
+				$result = $this->game_model->getGameDetail($_GET['gameId']);
 				$this->load->view('detail', $result);
 			}
 			if($_GET["action"]=="checkout"){
@@ -38,7 +38,7 @@ class Home extends CI_controller {
 			}
 			
 		} else {
-//			$data['gameId'] = $this->gameModel->getGameInfo();
+//			$data['gameId'] = $this->game_model->getGameInfo();
 			$this->load->view('homeGallery', $data);
 		}
 		

@@ -8,7 +8,7 @@
 		<li><p>&copy;OhmieMandi 2013</p></li>
 	</ul>
 	<ul>
-		<li><a href="users/login">CMS</a></li>
+		<li><a href="<?php echo base_url(); ?>users">CMS</a></li>
 	</ul>
 </footer>
 </div>

@@ -7,8 +7,8 @@ class Dashboard extends CI_controller {
 		if ($this->session->userdata('login_state') == FALSE) {
 			redirect('users/login');
 		}
-		$this->load->model('gameModel');
-		$this->load->model('imgModel');
+		$this->load->model('game_model');
+	//	$this->load->model('imgModel');
 	}
 	
 	public function home() {
@@ -17,8 +17,8 @@ class Dashboard extends CI_controller {
 		$this->load->view('cmsFooter');
 	}
 	public function manage() {
-		$data['gameId'] = $this->gameModel->getGameInfo();
-		$data['imgId']= $this->imgModel->getImgInfo();
+		$data['gameId'] = $this->game_model->getGameInfo();
+	//	$data['imgId']= $this->imgModel->getImgInfo();
 		$this->load->view('cmsHeader');
 		$this->load->view('manage', $data);
 		$this->load->view('cmsFooter');

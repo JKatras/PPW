@@ -4,5 +4,6 @@
 		<p>File Name: <?php echo($upload_data['file_name']) ?></p>
 		<img src="<?php echo base_url();?>public/images/<?php echo $upload_data['file_name'] ?>" alt="" />
 		<p><?php echo anchor('upload', 'Upload Another File!'); ?></p>
+		<p><a href="dashboard/manage">Back to Content Management</a></p>
 	</div>
 </div>

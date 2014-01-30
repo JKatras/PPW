@@ -6,6 +6,10 @@ class Users extends CI_Controller
 	function __construct() {
 		parent::__construct();
 	}
+	function index() {
+		$this->load->view('cmsHeader');
+		$this->load->view('loginform');
+	}
 	function submit(){
 		$this->load->library('form_validation');
 	
