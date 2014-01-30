@@ -71,6 +71,7 @@ body {
 	margin: 20px auto;
 	width: 90%;
 	max-width: 62.5rem;
+	min-width: 390px;
 }
 #wrapper ul {
 	list-style: none;
@@ -226,4 +227,17 @@ nav ul li{
 article {
 	text-align: center;
 }
+}
+@media (max-width: 500px) {
+	#wrapper{
+		padding: 10px;
+		margin: 0px;
+	}
+	.main-content {
+		width: 100%;
+	}
+	.column, .columns {
+		padding-left: 0px;
+		padding-right: 0px;
+	}
 }

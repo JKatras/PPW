@@ -1,14 +1,13 @@
 <div class="row">
 <div class="small-12 columns">
 	<h3>Create/Edit Game</h3>
+	<!--<p><a href="http://">Link Text</a></p>-->
+	<?php 
+	echo '<p>'.anchor('upload', 'Upload Images').'</p>';
+	echo validation_errors("<p class='error'>", "</p>");?>
 </div>
 </div>
-<?php
-
-echo validation_errors("<p style='color: red;'>", "</p>");
-
-echo form_open('dashboard/submit/'.$gameId);
-?>
+	<?php echo form_open('dashboard/submit/'.$gameId);?>	
 <div class="row">
 	<div class="small-12 columns large-6 columns">
 	    <label>Game Name</label> 
@@ -60,7 +59,6 @@ echo form_open('dashboard/submit/'.$gameId);
               'id'          => 'description',
               'value'       =>  $description,
               'rows'   		=> '20',
-//              'cols'        => '50',
             );
         	echo form_textarea($data); 
         	?>
@@ -111,7 +109,7 @@ echo form_open('dashboard/submit/'.$gameId);
 <div class="row">
 	<div class="small-12 columns">
 			<?php 
-			echo form_submit ('submit', 'Submit'); 
+			echo form_submit ('submit', 'Submit', 'class="button"'); 
 			?>
 	</div>
 </div>

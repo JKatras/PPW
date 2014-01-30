@@ -4,6 +4,9 @@ class Dashboard extends CI_controller {
 	
 	public function __construct() {
 		parent::__construct();
+		if ($this->session->userdata('login_state') == FALSE) {
+			redirect('users/login');
+		}
 		$this->load->model('gameModel');
 		$this->load->model('imgModel');
 	}
@@ -20,11 +23,7 @@ class Dashboard extends CI_controller {
 		$this->load->view('manage', $data);
 		$this->load->view('cmsFooter');
 	}
-	public function create() {
-//		$this->load->view('cmsHeader');
-//		$this->load->view('create');
-//		$this->load->view('cmsFooter');
-		
+	public function create() {		
 		$gameId = $this->uri->segment(3);
 		$submit = $this->input->post('submit', TRUE);
 	
@@ -83,27 +82,14 @@ class Dashboard extends CI_controller {
 	
 	function get_data_from_db($gameId) {
 		$query = $this->get_where($gameId);
-//		$data['gameId'] = $this->gameModel->getGameInfo();
-//		$result = $this->gameModel->getGameDetail($_GET['gameId']);
-//				$this->load->view('detail', $result);
-//		foreach ($result as $r => $row) {
-//			$data['name'] = "${row['name']}";
-//			$data['keywords'] = "${row['keywords']}";
-//			$data['slug'] = "${row['slug']}";
-//			$data['description'] = "${row['description']}";
-//			$data['requirements'] = "${row['requirements']}";
-//			$data['compatibility'] = "${row['compatibility']}";
-//			$data['price'] = "${row['price']}";
-//		}
 		foreach ($query->result() as $row) {
-		$data['name'] = $row->name;
-		$data['keywords'] = $row->keywords;
-		$data['slug'] = $row->slug;
-		$data['description'] = $row->description;
-		$data['requirements'] = $row->requirements;
-		$data['compatibility'] = $row->compatibility;
-		$data['price'] = $row->price;
-//		$data['page_content'] = $row->page_content;
+			$data['name'] = $row->name;
+			$data['keywords'] = $row->keywords;
+			$data['slug'] = $row->slug;
+			$data['description'] = $row->description;
+			$data['requirements'] = $row->requirements;
+			$data['compatibility'] = $row->compatibility;
+			$data['price'] = $row->price;
 	}
 		
 		if (!isset($data)) {

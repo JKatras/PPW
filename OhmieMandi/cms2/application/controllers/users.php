@@ -14,12 +14,8 @@ class Users extends CI_Controller
 		$this->load->model('mdl_users');
 		$query = $this->mdl_users->validate();
 		if ($query) {
-			$data = array(
-				'username' => $this->input->post('email'),
-				'is_logged_in' => true
-			);
-			$this->session->set_userdata($data);
-			redirect('dashboard/home');
+			$this->session->set_userdata('login_state', TRUE);
+			redirect('dashboard/manage');
 		} else {
 			redirect('users/login');
 		}
@@ -28,5 +24,10 @@ class Users extends CI_Controller
 	function login() {
 		$this->load->view('cmsHeader');
 		$this->load->view('loginform');
+	}
+	function logout() {
+		$this->session->sess_destroy();
+        
+        redirect('users/login', 'refresh');
 	}
 }

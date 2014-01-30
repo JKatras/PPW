@@ -1,8 +1,8 @@
 <footer>
 <div class="row">
 	<div class="small-6 columns">
-		<p><a href="users/signout">Sign Out</a></p>
-		<p><a href="http://localhost:8888/PPW/OhmieMandi/cms2/" target="_blank">Preview Site</a>
+		<p><a href="<?php echo base_url(); ?>users/logout">Log Out</a></p>
+		<p><a href="<?php echo base_url(); ?>" target="_blank">View Site</a>
 	</div>
 </div>
 </footer>

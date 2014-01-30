@@ -1,0 +1,22 @@
+#wrapper {
+	padding: 10px 20px;
+	
+}
+th {
+	text-align: left;
+}
+textarea {
+	resize: vertical;
+	height: 150px;
+	/*margin: 0;*/
+}
+.error {
+	color: red;
+}
+footer p {
+	text-align: left;
+	/*padding: 0px 20px 20px 0;*/
+}
+input[type='file'] {
+	padding-top: 30px;
+}

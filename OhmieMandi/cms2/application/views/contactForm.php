@@ -3,7 +3,7 @@
 		<div class="large-6 columns">		
 			<h1>Contact Us</h1>
 			<p>Need to report a technical problem? Have a question or suggestion? Let us know!</p>
-			<p>Simply fill out the contact form, or if you'd prefer, send us an email at: <a>ohm@mandiohmie.com</a>.</p>
+			<p>Simply fill out the contact form, or if you'd prefer, send us an email at: <a href="mailto:ohm@mandiohmie.com?Subject=From%20a%20site%20visitor" target="_top">ohm@mandiohmie.com</a>.</p>
 			<p>We'll try to respond shortly, but please understand that may take a little longer than usual during high site volume. Thanks!</p>
 		</div>
 		<div class="large-6 columns">

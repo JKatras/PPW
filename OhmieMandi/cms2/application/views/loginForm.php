@@ -18,10 +18,10 @@
 		echo 'Password';
 		echo form_password('pword', '');
 		
-		
-		echo form_submit('submit', 'Submit');
+		echo form_submit('submit', 'Submit', 'class="button"');
 		echo form_close();
 		?>
-	</div>
+		<p><a href="<?php echo base_url(); ?>">Back to Site</a></p>
+	</div>	
 </div>
 	
