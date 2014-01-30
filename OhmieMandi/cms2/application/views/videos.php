@@ -34,10 +34,10 @@
 			<article>
 				<ul>
 					<li><h1>Archive</h1></li>
-					<li><a href="">Pirate Install Fix</a></li>
-					<li><a href="">C# Tutorial</a></li>
-					<li><a href="">Fake Block Promo</a></li>
-					<li><a href="">Intro to Unity</a></li>
+					<li><a href="<?php echo "?action=vidDetail"; ?>">Pirate Install Fix</a></li>
+					<li><a href="<?php echo "?action=vidDetail"; ?>">C# Tutorial</a></li>
+					<li><a href="<?php echo "?action=vidDetail"; ?>">Fake Block Promo</a></li>
+					<li><a href="<?php echo "?action=vidDetail"; ?>">Intro to Unity</a></li>
 				</ul>
 			</article>
 		</div>

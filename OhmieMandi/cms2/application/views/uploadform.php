@@ -8,7 +8,7 @@
 		<input type="file" name="userfile" size="30" />
 		
 		<br /><br />
-		<input class="button"type="submit" value="Upload" />
+		<input class="button" type="submit" value="Upload" />
 		</form>
 		<p><a href="dashboard/manage">Back to Content Management</a></p>
 	</div>
