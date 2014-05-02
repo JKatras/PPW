@@ -24,7 +24,7 @@ echo form_open('dashboard/submit/'.$gameId);
 	</div>
 </div>
 <div class="row">
-	<div class="small-12 columns">
+	<div class="small-12 columns large-6 columns">
        <label>Keywords</label>
        		<?php  
            	$data = array(
@@ -38,7 +38,7 @@ echo form_open('dashboard/submit/'.$gameId);
     </div>
 </div>
 <div class="row">
-	<div class="small-12 columns">
+	<div class="small-12 columns large-6 columns">
     	<label>Tagline</label> 
         	<?php  
            	$data = array(
@@ -52,7 +52,7 @@ echo form_open('dashboard/submit/'.$gameId);
 	</div>
 </div>
 <div class="row">
-	<div class="small-12 columns"> 
+	<div class="small-12 columns large-6 columns"> 
         <label>Description</label>
        		<?php  
            	$data = array(
@@ -67,7 +67,7 @@ echo form_open('dashboard/submit/'.$gameId);
 	</div>
 </div>
 <div class="row">
-	<div class="small-12 columns"> 
+	<div class="small-12 columns large-6 columns"> 
         <label>Requirements</label>
        		<?php  
            	$data = array(
@@ -81,7 +81,7 @@ echo form_open('dashboard/submit/'.$gameId);
 	</div>
 </div>
 <div class="row">
-	<div class="small-12 columns"> 
+	<div class="small-12 columns large-6 columns"> 
         <label>Compatibility</label>
        		<?php  
            	$data = array(
@@ -95,7 +95,7 @@ echo form_open('dashboard/submit/'.$gameId);
 	</div>
 </div>
 <div class="row">
-	<div class="small-12 columns"> 
+	<div class="small-12 columns large-6 columns"> 
         <label>Price</label>
        		<?php  
            	$data = array(
@@ -109,7 +109,7 @@ echo form_open('dashboard/submit/'.$gameId);
 	</div>
 </div>
 <div class="row">
-	<div class="small-12 columns">
+	<div class="small-12 columns large-6 columns">
 			<?php 
 			echo form_submit ('submit', 'Submit'); 
 			?>
