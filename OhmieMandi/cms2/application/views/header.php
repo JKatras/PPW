@@ -18,7 +18,7 @@
 		<?php echo
 			"<a href='?action=home'>
 				<img id='logo' src='".base_url()."public/images/OM_logo_purple_70x70.png' alt='OhmieMandi Logo' />
-				<img id='logo-tag' src='".base_url()."public/images/OM-tag.png' alt='OhmieMandi' />
+				<img id='logo-tag' src='".base_url()."public/images/MO-tag.png' alt='MandiOhmie' />
 			</a>"
 		?>
 		</h1>
