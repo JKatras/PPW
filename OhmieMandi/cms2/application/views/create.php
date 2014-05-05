@@ -12,7 +12,7 @@
 	<?php echo form_open('dashboard/submit/'.$gameId);?>
 <!--<div class="row">-->
 	<!--<div class="small-12 columns large-6 columns">-->
-	    <label>Game Name</label> 
+	    <label><p class="key">1</p>Game Name</label> 
 	    	<?php  
            	$data = array(
               'name'        => 'name',
@@ -26,7 +26,7 @@
 <!--</div>
 <div class="row">-->
 	<!--<div class="small-12 columns large-6 columns">-->
-       <label>Keywords</label>
+<!--       <label>Keywords</label>
        		<?php  
            	$data = array(
               'name'        => 'keywords',
@@ -35,12 +35,12 @@
               'maxlength'   => '500',
             );
 			echo form_input($data); 
-        	?>  
+        	?>  -->
     <!--</div>-->
 <!--</div>
 <div class="row">-->
 	<!--<div class="small-12 columns large-6 columns">-->
-    	<label>Tagline</label> 
+    	<label><p class="key">2</p>Tagline</label> 
         	<?php  
            	$data = array(
               'name'        => 'slug',
@@ -54,7 +54,7 @@
 <!--</div>
 <div class="row">-->
 	<!--<div class="small-12 columns large-6 columns"> -->
-        <label>Description</label>
+        <label><p class="key">3</p>Description</label>
        		<?php  
            	$data = array(
               'name'        => 'description',
@@ -68,7 +68,7 @@
 <!--</div>
 <div class="row">-->
 	<!--<div class="small-12 columns large-6 columns"> -->
-        <label>Requirements</label>
+        <label><p class="key">4</p>Requirements</label>
        		<?php  
            	$data = array(
               'name'        => 'requirements',
@@ -82,7 +82,7 @@
 <!--</div>
 <div class="row">-->
 	<!--<div class="small-12 columns large-6 columns"> -->
-        <label>Compatibility</label>
+        <label><p class="key">5</p>Compatibility</label>
        		<?php  
            	$data = array(
               'name'        => 'compatibility',
@@ -96,7 +96,7 @@
 <!--</div>
 <div class="row">-->
 	<!--<div class="small-12 columns large-6 columns"> -->
-        <label>Price</label>
+        <label><p class="key">6</p>Price</label>
        		<?php  
            	$data = array(
               'name'        => 'price',
