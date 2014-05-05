@@ -7,17 +7,6 @@
 	</div>
 </div>
 
-<!--<div class="row">
-	<div id="createView" class="small-12 large-6 columns">
-		<div id="blue"></div>
-		<div id="blue"></div>
-		<div id="blue"></div>
-	</div>
-	<div id="cmsKey" class="small-12 large-6 columns">
-		<div id="red"></div>
-	</div>
-</div>-->
-
 <div class="row">
 	<div id="createForm" class="small-12 columns large-6 columns">
 	<?php echo form_open('dashboard/submit/'.$gameId);?>
