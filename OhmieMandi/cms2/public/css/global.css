@@ -212,7 +212,15 @@ footer ul {
 		text-align: center;
 	}
 }
-@media (max-width: 500px) {
+@media screen and (max-width:430px) {
+	nav {
+		padding-right: 30px;
+	}
+}
+@media screen and (max-width: 500px) {
+	nav h1 {
+		font-size: 1.25em;
+	}
 	#wrapper{
 		padding: 10px;
 		margin: 0px;
@@ -225,7 +233,7 @@ footer ul {
 		padding-right: 0px;
 	}
 }
-@media (max-width: 550px) {
+@media screen and (max-width: 550px) {
 	[class*="block-grid-"] li {
 		float: none;
 		display: inline-block;

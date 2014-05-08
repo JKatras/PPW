@@ -5,7 +5,7 @@
 		<li><a href=""><img src="<?php echo base_url(); ?>public/images/li-29x29.png" alt="LinkedIn Logo" /></a></li>
 	</ul>
 	<ul>
-		<li><p>&copy;OhmieMandi 2013</p></li>
+		<li><p>&copy;MandiOhmie 2014</p></li>
 	</ul>
 	<ul>
 		<li><a href="<?php echo base_url(); ?>users">CMS</a></li>

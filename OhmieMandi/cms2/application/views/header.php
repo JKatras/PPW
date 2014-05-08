@@ -4,7 +4,7 @@
 <head> 
 	<meta charset="utf-8"> 
 	<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-	<title>OhmieMandi</title> 
+	<title>MandiOhmie</title> 
 	<link rel="stylesheet" href="<?php echo base_url(); ?>public/css/normalize.css"> 
 	<link rel="stylesheet" href="<?php echo base_url(); ?>public/css/foundation.min.css">
 	<link rel="stylesheet" href="<?php echo base_url(); ?>public/css/global.css" />
@@ -17,7 +17,7 @@
 		<h1>
 		<?php echo
 			"<a href='?action=home'>
-				<img id='logo' src='".base_url()."public/images/OM_logo_purple_70x70.png' alt='OhmieMandi Logo' />
+				<img id='logo' src='".base_url()."public/images/OM_logo_purple_70x70.png' alt='MandiOhmie Logo' />
 				<img id='logo-tag' src='".base_url()."public/images/MO-tag.png' alt='MandiOhmie' />
 			</a>"
 		?>

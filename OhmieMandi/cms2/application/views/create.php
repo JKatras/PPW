@@ -6,12 +6,9 @@
 		echo validation_errors("<p class='error'>", "</p>");?>
 	</div>
 </div>
-
 <div class="row">
 	<div id="createForm" class="small-12 columns large-6 columns">
 	<?php echo form_open('dashboard/submit/'.$gameId);?>
-<!--<div class="row">-->
-	<!--<div class="small-12 columns large-6 columns">-->
 	    <label><p class="key">1</p>Game Name</label> 
 	    	<?php  
            	$data = array(
@@ -22,24 +19,6 @@
             ); 
             echo form_input($data); 
 	        ?>
-	<!--</div>-->
-<!--</div>
-<div class="row">-->
-	<!--<div class="small-12 columns large-6 columns">-->
-<!--       <label>Keywords</label>
-       		<?php  
-           	$data = array(
-              'name'        => 'keywords',
-              'id'          => 'keywords',
-              'value'       =>  $keywords,
-              'maxlength'   => '500',
-            );
-			echo form_input($data); 
-        	?>  -->
-    <!--</div>-->
-<!--</div>
-<div class="row">-->
-	<!--<div class="small-12 columns large-6 columns">-->
     	<label><p class="key">2</p>Tagline</label> 
         	<?php  
            	$data = array(
@@ -50,10 +29,6 @@
             );
        	 	echo form_input($data); 
         	?>
-	<!--</div>-->
-<!--</div>
-<div class="row">-->
-	<!--<div class="small-12 columns large-6 columns"> -->
         <label><p class="key">3</p>Description</label>
        		<?php  
            	$data = array(
@@ -64,10 +39,6 @@
             );
         	echo form_textarea($data); 
         	?>
-	<!--</div>-->
-<!--</div>
-<div class="row">-->
-	<!--<div class="small-12 columns large-6 columns"> -->
         <label><p class="key">4</p>Requirements</label>
        		<?php  
            	$data = array(
@@ -78,10 +49,6 @@
             );
         	echo form_input($data); 
         	?>
-	<!--</div>-->
-<!--</div>
-<div class="row">-->
-	<!--<div class="small-12 columns large-6 columns"> -->
         <label><p class="key">5</p>Compatibility</label>
        		<?php  
            	$data = array(
@@ -92,10 +59,6 @@
             );
         	echo form_input($data); 
         	?>
-	<!--</div>-->
-<!--</div>
-<div class="row">-->
-	<!--<div class="small-12 columns large-6 columns"> -->
         <label><p class="key">6</p>Price</label>
        		<?php  
            	$data = array(
@@ -106,21 +69,15 @@
             );
         	echo form_input($data); 
         	?>
-	<!--</div>-->
-<!--</div>
-<div class="row">-->
-	<!--<div class="small-12 columns large-6 columns">-->
+
 			<?php 
 			echo form_submit ('submit', 'Submit', 'class="button"'); 
 			?>
-	<!--</div>-->
-<!--</div>-->
 <?php
 echo form_close();
 ?>
 </div>
 
-<!--<div class="row">-->
 <div id="cmsKey" class="small-12 columns large-6 columns" id="cmsKey">
 	<img src="<?php echo base_url(); ?>public/images/cmsKey.png" alt="" />
 </div>
