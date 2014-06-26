@@ -30,7 +30,7 @@
 					<a class="<?php if($this->uri->uri_string()=="?action=home"){echo "active";}?>" href="?action=home" data-dropdown="nav-hover" data-options="is_hover:true">
 						Games
 					</a>
-					<ul id='nav-hover' class='f-dropdown' data-dropdown-content>		
+					<ul id='nav-hover' class='f-dropdown small' data-dropdown-content>		
 				<?php
 				foreach ($gameId as $g => $row) {
 				?>

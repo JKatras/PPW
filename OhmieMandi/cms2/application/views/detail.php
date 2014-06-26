@@ -2,13 +2,8 @@
 	<div class="row">
 		<div id="detail-gallery" class="small-12 large-6 columns">
 		<ul class="medium-block-grid-2">		
-			<!--<li><img src="<?php echo base_url(); ?>public/images/sh-thumb-210x210.png" alt="P-38 versus Zeros" /></li>
-			<li><img src="<?php echo base_url(); ?>public/images/sh-thumb2-210x210.png" alt="P-38 takes flak against a mini-boss" /></li>
-			<li><img src="<?php echo base_url(); ?>public/images/sh-thumb-440x210.png" alt="P-38 versus giant airship" /></li>-->
-			
-			<li><img src="<?php echo base_url(); ?>public/images/<?php echo "${'gallerythumb1'}"; ?>" alt="P-38 versus Zeros" /></li>
-			<li><img src="<?php echo base_url(); ?>public/images/<?php echo "${'gallerythumb2'}"; ?>" alt="P-38 versus Zeros" /></li>
-			<!--<li><img class="landscape" src="<?php echo base_url(); ?>public/images/<?php echo "${'gallerythumb3'}"; ?>" alt="P-38 versus Zeros" /></li>-->
+			<li><img src="<?php echo base_url(); ?>public/images/<?php echo "${'gallerythumb1'}"; ?>" alt="" /></li>
+			<li><img src="<?php echo base_url(); ?>public/images/<?php echo "${'gallerythumb2'}"; ?>" alt="" /></li>
 		</ul>
 		</div>
 		<div id="detail-copy" class="small-12 large-6 columns">

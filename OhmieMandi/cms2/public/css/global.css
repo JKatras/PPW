@@ -64,7 +64,7 @@ body {
 	margin: 20px auto;
 	width: 90%;
 	max-width: 62.5rem;
-	min-width: 390px;
+	min-width: 320px;
 }
 #wrapper ul {
 	list-style: none;
@@ -212,12 +212,23 @@ footer ul {
 		text-align: center;
 	}
 }
+/*@media screen and (max-width: 660px) {
+	ul #nav-hover .f-dropdown {
+		width: 50%;
+	}
+}*/
 @media screen and (max-width:430px) {
 	nav {
-		padding-right: 30px;
+		/*padding-right: 30px;*/
 	}
+	/*.f-dropdown {
+		margin: 0 80px;
+	}*/
 }
 @media screen and (max-width: 500px) {
+	/*.f-dropdown open{
+		width: 50%;
+	}*/
 	nav h1 {
 		font-size: 1.25em;
 	}
